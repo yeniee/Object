@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+}
+
+#wrap{}
+.sign_up{}
+.sign_up h3{}
+.signup_section{}
+
+.col1{
+	padding: 5px 10px;
+}
+.text{}
+.col2{}
+.col2>input{
+	width: 150px;
+}
+.col2>input,.bordernone{
+	border: none;
+    border-bottom: 1px solid;
+}
+.hyphen{}
+.col3{}
+.col3>check{}
+
+/*select*/
+.change_email{}
+.change_email>option{}

@@ -4,9 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-	<!-- 헤더 jsp 는 모든 페이지에서 열리기 때문에 상대경로를 사용하면 안됩니다.. 서로 다른 폴더에서 경로를 찾아야 하기 때문에 절대경로로 css , js 호출합니다.  -->
-	<!--   css/css.css  로 작성시 member폴더내 페이지에서 호출 불가능 그래서 절대경로인  http://localhost:8080/Object/css/css.css 로 하지만 서블릿과 마찬가지로 localhost:8080 는 생략이 가능하다 -->
+<title>Insert title here</title>	
 	<link rel="stylesheet" href="/Object/css/css.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Poiret+One&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">

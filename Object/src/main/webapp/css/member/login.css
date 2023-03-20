@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*reset*/
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.box{
+	width:60%;
+	margin:50px auto;
+}
+
+.login{
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+}
+
+.container{}
+.loginbox{
+	width:350px;
+	border:1px solid;
+	margin: 10px 0;
+    padding: 10px 20px;
+}
+.text{
+	display: inline-block;
+	width: 75px;
+	font-size: 12px;
+}
+.textinput{}
+.textinput>input{
+	border:none;
+	outline: none;
+}
+.ob_id{}
+.ob_password{}
+.loginbtn{
+	background: #222;
+    color: #fff;
+	padding: 37px 10px;
+    margin: 0 20px;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    
+    
+	
+}
+
+.find{
+    width: 72%;
+    text-align: right;
+}
+.find>a{
+	font-size: 12px;
+}

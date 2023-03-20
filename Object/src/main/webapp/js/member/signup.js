@@ -17,7 +17,6 @@ function check1(){
 		})//ajax
 	}else{col3[0].innerHTML="소문자,숫자조합 5~20글자 패턴" + "소문자,숫자조합 5~20글자 패턴"}	
 }//check1 end
-
 /*--------------비밀번호--------------*/
 function check2(){
 	let ob_password = document.querySelector("#ob_password").value;

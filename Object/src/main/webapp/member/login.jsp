@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<link rel="stylesheet" href="/Object/css/css.css">
+	<!-- <link rel="stylesheet" href="/Object/css/css.css"> -->
+	<link rel="stylesheet" href="/Object/css/member/login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Poiret+One&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
@@ -15,18 +16,36 @@
 
 	<div id="wrap">
 	
-		<h3>로그인페이지</h3>	
 		
-		<div class="login">
-			아이디 : <input type="text" name="ob_id" id="ob_id">
-			비밀번호 : <input type="password" name="ob_password" id="ob_password">
-			<button type="button" onclick="login()"> 로그인하기</button>
-		</div>	
 		
-		<div class="find">
-			<div>아이디 찾기</div>
-			<div>비밀번호 찾기</div>
-		</div>
+		<div class="box">
+			<h3>로그인</h3>	
+			<div class="login">
+				<div class="container">
+					<div class="loginbox">
+						<span class="text">아이디</span>						
+						<span class="textinput">
+							<input type="text" name="ob_id" id="ob_id" class="ob_id">
+						</span>
+					</div><!-- loginbox -->			
+					<div class="loginbox">
+						<span class="text">비밀번호</span>
+						<span class="textinput">
+							<input type="password" name="ob_password" id="ob_password" class="ob_password">
+						</span>
+					</div><!-- loginbox -->			
+				</div><!-- container -->
+		
+				
+				<button type="button" onclick="login()" class="loginbtn"> 로그인하기</button>
+			</div><!-- login -->	
+			
+			<div class="find">
+				<a href="/Object/member/findid.jsp">아이디 찾기</a>
+				<a href="/Object/member/findpassword.jsp">비밀번호 찾기</a>
+			</div><!-- find -->		
+		</div><!-- loginbox -->
+
 		
 			
 		

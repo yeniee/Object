@@ -8,6 +8,8 @@ function login(){
 
 	//console.log(logininfo)
 	
+
+	
 	$.ajax({
 		url:"/Object/member/login",
 		data:logininfo,

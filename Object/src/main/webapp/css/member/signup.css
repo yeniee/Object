@@ -12,17 +12,24 @@
 .signup_section{}
 
 .col1{
-	padding: 5px 10px;
+	padding: 15px 10px;
+	font-size: 14px;
 }
 .text{}
 .col2{}
 .col2>input{
 	width: 150px;
 }
-.col2>input,.bordernone{
+.col2>input,.bordernone,#sample4_detailAddress{
 	border: none;
+	outline:none;
     border-bottom: 1px solid;
+    padding-left: 5px;
 }
+#ob_phone_1,#ob_phone_2,#ob_phone_3{
+	width:80px;
+}
+
 .hyphen{}
 .col3{}
 .col3>check{}
@@ -30,3 +37,27 @@
 /*select*/
 .change_email{}
 .change_email>option{}
+
+.adderess_span{
+	display: block;
+	margin:10px 0;
+}
+
+.agree_section{}
+.agree_div{
+	margin:25px 0;
+}
+.agree_div>span{
+	display:inline-block;
+	width:200px;;
+	font-size: 14px;
+	vertical-align: top;	
+}
+
+.agreetextarea{
+	width:850px;
+	height:210px;
+	resize: none;
+	overflow: scroll;
+	outline: none;
+}

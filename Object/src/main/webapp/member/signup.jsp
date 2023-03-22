@@ -67,14 +67,14 @@
 				</tr>
 				<tr>
 					<td class="col1">
-						<span class="text">전화번호('-' 제외)</span>
+						<span class="text">전화번호 ('-' 제외)</span>
 					</td>
 					<td class="col2">
-						<input type="text" id="ob_phone_1" name="ob_phone" onkeyup="check5()">
+						<input type="text" id="ob_phone_1" class="ob_phone" name="ob_phone" onkeyup="check5()">
 						<span class="hyphen">-</span>
-						<input type="text" id="ob_phone_2" name="ob_phone" onkeyup="check5()">
+						<input type="text" id="ob_phone_2" class="ob_phone" name="ob_phone" onkeyup="check5()">
 						<span class="hyphen">-</span>
-						<input type="text" id="ob_phone_3" name="ob_phone" onkeyup="check5()">
+						<input type="text" id="ob_phone_3" class="ob_phone" name="ob_phone" onkeyup="check5()">
 					</td>
 					<td class="col3"><span class="check"></span></td>
 				</tr>
@@ -109,12 +109,12 @@
 				<tr>
 					<td rowspan="2" class="col1" >주소</td>
 					<td colspan="2" class="col2"> 
-						<span>
+						<span class="adderess_span">
 							<input type="text" id="sample4_postcode" class="bordernone" placeholder="우편번호">
 							<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
 						</span>						
 						
-						<span>	
+						<span class="adderess_span">	
 							<input type="text" id="sample4_roadAddress" class="bordernone" placeholder="도로명주소">
 							<input type="text" id="sample4_jibunAddress" class="bordernone" placeholder="지번주소">
 						</span>							
@@ -122,8 +122,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="col2"> 
-						<input type="text" id="sample4_detailAddress" placeholder="상세주소">
+					<td class="col2">
+						<span class="adderess_span">	 
+							<input type="text" id="sample4_detailAddress" placeholder="상세주소">
+						</span>
 					</td>
 					<td class="col3"> </td>
 				</tr>
@@ -133,20 +135,23 @@
 
 			<h3>이용약관</h3>
 			<div class="agree_section">
-				<div>
+				<div class="agree_div">
 					<span>[필수] 이용약관 동의</span>
-					<textarea readonly="readonly"></textarea>
+					<textarea readonly="readonly" class="agreetextarea"></textarea>
 					<label><input type="checkbox" name="terms_agree"
 						value="agree" id="confirm1"> 동의함</label>
 				</div>
-				<div>
+				<div class="agree_div">
 					<span>[필수] 개인정보 이용약관동의</span>
+					<textarea readonly="readonly" class="agreetextarea"></textarea>
 					<label><input type="checkbox" name="infor_agree"
 						value="agree" id="confirm2"> 동의함</label>
 				</div>
-				<div>
-					<span>[선택] 쇼핑정보 수신 동의</span> <label><input type="checkbox"
-						name="shopping_agree" value="agree" id="confirm3">
+				<div class="agree_div">
+					<span>[선택] 쇼핑정보 수신 동의</span> 
+					<textarea readonly="readonly" class="agreetextarea"></textarea>
+					<label>
+						<input type="checkbox" name="shopping_agree" value="agree" id="confirm3">
 						동의함</label>
 				</div>
 			</div><!-- agree_section -->

@@ -155,13 +155,14 @@
 						동의함</label>
 				</div>
 			</div><!-- agree_section -->
-			<button type="reset">취소하기</button>
-			<button type="button" onclick="ob_signup()">회원가입하기</button>
+			
+			<div class="btnsection">
+				<button type="reset" class="btn resetbtn">취소하기</button>
+				<button type="button" onclick="ob_signup()" class="btn signupbtn">회원가입하기</button>
+			</div>
+			
 
 		</div><!-- sign_up -->
-
-
-
 	</div><!-- wrap -->
 
 	<%@include file = "../footer.jsp" %>		<!--  푸터 파일 가져오기 -->

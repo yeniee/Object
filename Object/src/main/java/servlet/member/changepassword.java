@@ -36,5 +36,6 @@ public class changepassword extends HttpServlet {
 		response.getWriter().print(result);
 		
 	}
+	
 
 }

@@ -6,8 +6,8 @@ $.ajax({
 	success : function(re){ 		
 		//alert(re)
 		let member = JSON.parse(re)//통신된 json 문자타입을 json타입으로 형변환
-		console.log("mypage.js 확인")
-		console.log(member)		
+		//console.log("mypage.js 확인")
+		//console.log(member)		
 		document.querySelector(".ob_num").innerHTML = member.ob_num //왜 너는 또 찾지를 못하니?
 		document.querySelector(".ob_id").innerHTML = member.ob_id
 		document.querySelector(".ob_name").innerHTML = member.ob_name

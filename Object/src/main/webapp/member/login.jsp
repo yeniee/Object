@@ -14,10 +14,7 @@
 <body>
 <%@include file = "../header.jsp" %>	<!--  헤더 파일 가져오기 -->
 
-	<div id="wrap">
-	
-		
-		
+	<div id="wrap">		
 		<div class="box">
 			<h3>로그인</h3>	
 			<div class="login">

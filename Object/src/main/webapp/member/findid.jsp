@@ -4,40 +4,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert title here</title> 
+<link rel="stylesheet" href="/Object/css/member/findid.css">
 </head>
 <body>
 
 <%@include file = "../header.jsp" %>
 <div class="wrap">
 	<h2>아이디 찾기</h2>
+	<div class="container">
 	
-	<div>
-		<span>이름 :</span> <input type="text" name="ob_name" id="ob_name">		
-	</div>
+		
+		<div class="find_wrap">  
+			<div class="input_wrap">
+				<div class="box">
+					<span class="text">이름</span> 
+					<span class="span_input">
+						<input type="text" name="ob_name" id="ob_name" class="name-input ob_name">
+					</span>						
+				</div><!-- box -->
+				
+				<div class="box">
+					<span class="text">전화번호</span>		 
+						<input type="text" id="ob_phone_1" class="phone-input ob_phone_1" name="ob_phone" onkeyup="phone_focus()">
+							<span class="hyphen">-</span>
+						<input type="text" id="ob_phone_2" class="phone-input ob_phone_2" name="ob_phone" onkeyup="phone_focus()">
+							<span class="hyphen">-</span>
+						<input type="text" id="ob_phone_3" class="phone-input ob_phone_2" name="ob_phone" onkeyup="phone_focus()">		
+				</div><!-- box -->
+				
+			</div><!-- input_wrap -->
+					
+			<div class="btnbox">
+				<button type="button" onclick="findid()" class="findbtn"> 아이디 찾기</button>
+			</div>
+		</div><!-- find_wrap -->
+		
+		
+		<div class="findbox"></div>
+		<div class="link_box"> 
+			<a href="/Object/member/login.jsp">로그인하기</a>
+			<a href="/Object/member/findpassword.jsp">비밀번호찾기</a>
+			<a href="/Object/member/signup.jsp">회원가입하기</a>
+		</div><!-- link_box -->
+	</div><!-- container -->
 	
-	<div>
-		<span>전화번호 :</span>		 
-			<input type="text" id="ob_phone_1" name="ob_phone" onkeyup="phone_focus()">
-				<span class="hyphen">-</span>
-			<input type="text" id="ob_phone_2" name="ob_phone" onkeyup="phone_focus()">
-				<span class="hyphen">-</span>
-			<input type="text" id="ob_phone_3" name="ob_phone" onkeyup="phone_focus()">		
-	</div>
-	
-	<div class="findbox">  </div>
-	<button type="button" onclick="findid()" class="findid"> 아이디 찾기</button>
-	
-	<div class="link_box"> 
-		<a href="/Object/member/login.jsp">로그인하기</a>
-		<a href="/Object/member/findpassword.jsp">비밀번호찾기</a>
-		<a href="/Object/member/signup.jsp">회원가입하기</a>
-	</div>
 	
 </div><!-- wrap -->
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="/Object/js/member/find.js"></script>
 </body>
 </html>

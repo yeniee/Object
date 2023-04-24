@@ -30,7 +30,16 @@ function check2(){
 
 
 function uppassword(){
-	alert("클릭")
+	//alert("클릭")
+		
+	let ob_password = document.querySelector(".ob_password").value; 
+	let ob_passwordcheck = document.querySelector(".new_ob_password").value;
+	
+	//console.log(ob_password)
+	//console.log(ob_passwordcheck)
+	
+	if(ob_password==''){alert("비밀번호를 입력해주세요.")}
+	if(ob_passwordcheck==''){alert("비밀번호를 입력해주세요.")}
 	
 	if( check[0].innerHTML != "성공"){ return; }
 	
@@ -38,17 +47,20 @@ function uppassword(){
 	
 let ob_num = sessionStorage.getItem("ob_num");//세션 가져오기
 
+
+
 let data ={
 	ob_password : document.querySelector(".ob_password").value,
 	ob_num : ob_num //세션
 }
-	console.log(data)
+	//console.log(data)	
+	//console.log(data.passob_password);
 	
 	$.ajax({
 		url: "/Object/member/changepassword",
 		type:"post",
 		data:data,
-		success : function(result){ alert(result)}
+		success : function(re){ alert(re)}
 	})
 
 }

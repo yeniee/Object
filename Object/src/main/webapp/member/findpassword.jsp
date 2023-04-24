@@ -5,43 +5,66 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/Object/css/member/findpassword.css">
 </head>
 <body>
 <%@include file = "../header.jsp" %>
 <div class="wrap">
 	<h2>비밀번호 찾기</h2>	
+	<div class="container">
+		<div class="find_wrap">
+			<div class="input_wrap">
+				<div class="box">
+					<span class="text">아이디 :</span>
+					<span class="span_input"> 
+						<input type="text" name="ob_id" id="ob_id">		
+					</span>
+				</div><!-- box -->
+		
+				<div class="box">
+					<span class="text">이름 :</span>
+					<span class="span_input"> 
+						<input type="text" name="ob_name" id="ob_name">		
+					</span>
+				</div><!-- box -->	
+		
+				<div class="box">
+					<span class="text">이메일 : </span>		
+						<input type="text" id="ob_email_1" name="ob_email">						
+						<span class="sms">@</span>
+						<input type="text" id="ob_email_2" name="ob_email" readonly="readonly">
+									
+						<select id="change_email" name="ob_email" >
+							<option value="none">선택하세요</option>
+							<option value="self">직접입력</option>
+							<option value="naver.com">naver.com</option>
+							<option value="daum.net">daum.net</option>
+							<option value="nate.com">nate.com</option>
+							<option value="gmail.com">gmail.com</option>
+							<option value="kakao.com">kakao.com</option>							
+						</select>					
+				</div><!-- box -->
+			</div><!-- input_wrap -->
+			
+			
+			
+			<div class="btn_box"> 
+				<button type="button" onclick="findpassword()" class="findpassword">비밀번호 찾기</button>	
+			</div><!-- btn_box -->
+			
+		</div><!-- find_wrap -->	
 	
-	<div>
-		<span>아이디 :</span> <input type="text" name="ob_id" id="ob_id">		
-	</div>
 	
-	<div>
-		<span>이름 :</span> <input type="text" name="ob_name" id="ob_name">		
-	</div>	
+		
 	
-	<div>
-		<span>이메일 : </span>
-		<div>
-			<input type="text" id="ob_email_1" name="ob_email">						
-			<span class="sms">@</span>
-			<input type="text" id="ob_email_2" name="ob_email" readonly="readonly">
-						
-			<select id="change_email" name="ob_email" >
-				<option value="none">선택하세요</option>
-				<option value="self">직접입력</option>
-				<option value="naver.com">naver.com</option>
-				<option value="daum.net">daum.net</option>
-				<option value="nate.com">nate.com</option>
-				<option value="gmail.com">gmail.com</option>
-				<option value="kakao.com">kakao.com</option>							
-			</select>					
-		</div>
+		<div class="findbox"></div>
 	
-	</div>	
-	
-	<div class="findbox"></div>
-	<button type="button" onclick="findpassword()" class="findpassword">비밀번호 찾기</button>	
-	
+		<div class="link_box"> 
+			<a href="/Object/member/login.jsp">로그인하기</a>
+			<a href="/Object/member/findid.jsp">아이디찾기</a>
+			<a href="/Object/member/signup.jsp">회원가입하기</a>
+		</div><!-- link_box -->
+	</div><!-- container -->
 </div><!-- wrap -->
 <script type="text/javascript" src="/Object/js/member/findpassword.js"></script>
 

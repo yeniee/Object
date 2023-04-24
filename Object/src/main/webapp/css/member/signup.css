@@ -7,24 +7,38 @@
 }
 
 #wrap{}
-.sign_up{}
-.sign_up h3{}
-.signup_section{}
+.sign_up{
+	width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+.sign_up h3{
+	margin:20px 0;
+}
+.signup_section{
+	    border-collapse: collapse;
+}
 
 .col1{
+	width:30%;
 	padding: 15px 10px;
 	font-size: 14px;
+	background: #e9e9e9;
 }
 .text{}
-.col2{}
+.col2{
+	padding-left: 30px;
+}
 .col2>input{
 	width: 150px;
 }
 .col2>input,.bordernone,#sample4_detailAddress{
-	border: none;
+	/* border: none; */
 	outline:none;
-    border-bottom: 1px solid;
-    padding-left: 5px;
+    /* border-bottom: 1px solid; */
+    padding: 5px;
+    font-size: 12px;
 }
 #ob_phone_1,#ob_phone_2,#ob_phone_3{
 	width:80px;
@@ -60,4 +74,23 @@
 	resize: none;
 	overflow: scroll;
 	outline: none;
+}
+
+.btnsection{
+	text-align: center;
+}
+.btn{
+	border: none;
+    outline: none;
+    cursor:pointer;
+    background: none;
+    padding: 20px;
+    margin:0 20px;
+}
+.resetbtn{
+	border: 1px solid #222;
+}
+.signupbtn{
+	background: #222;
+    color: #fff;
 }

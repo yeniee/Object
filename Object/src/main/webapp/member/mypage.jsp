@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/Object/css/member/mypage.css">
 </head>
 <body>
-
 
 <%@include file = "../header.jsp" %>
 
@@ -19,56 +19,59 @@
 %>
 
 <div class="wrap">
+
 	<h3>회원정보</h3>
-	<table>
-		<tr>	
-			<td>회원번호</td>
-			<td class="ob_num"> </td>
-		</tr>
-		<tr>
-			<td>아이디</td>
-			<td class="ob_id"> </td>
-		</tr>
-		<tr>
-			<td>이름</td>
-			<td class="ob_name"> </td>
-		</tr>
-		<tr>	
-			<td>전화번호</td>
-			<td class="ob_phone"> </td>
-		</tr>
-		<tr>	
-			<td>이메일</td>
-			<td class="ob_email"> </td>
-		</tr>
-	
-		<tr>	
-			<td>가입날짜</td>
-			<td class="ob_signup_date"> </td>
-		</tr>		
+	<div class="conatainr">
+		<table class="table">
+			<tr>	
+				<td class="td1">회원번호</td>
+				<td class="td2 ob_num"> </td>
+			</tr>
+			<tr>
+				<td class="td1">아이디</td>
+				<td class="td2 ob_id"> </td>
+			</tr>
+			<tr>
+				<td class="td1">이름</td>
+				<td class="td2 ob_name"> </td>
+			</tr>
+			<tr>	
+				<td class="td1">전화번호</td>
+				<td class="td2 ob_phone"> </td>
+			</tr>
+			<tr>	
+				<td class="td1">이메일</td>
+				<td class="td2 ob_email"> </td>
+			</tr>
 		
-		<tr>	
-			<td>주소</td>
-			<td class="ob_address"> </td>
-		</tr>	
-	
-		<tr>	
-			<td>포인트</td>
-			<td class="ob_point"> </td>
-		</tr>	
+			<tr>	
+				<td class="td1">가입날짜</td>
+				<td class="td2 ob_signup_date"> </td>
+			</tr>		
+			
+			<tr>	
+				<td class="td1">주소</td>
+				<td class="td2 ob_address"> </td>
+			</tr>	
 		
-	
-	</table>
-	
-	<div class="btn_section">
+			<tr>	
+				<td class="td1">포인트</td>
+				<td class="td2 ob_point"> </td>
+			</tr>	
+			
 		
-		<a href="/Object/member/update.jsp">수정하기</a>
-		<a href="/Object/member/delete.jsp">탈퇴하기</a>
-	</div>
+		</table>
+	</div><!-- container -->
+	
+	
+	<div class="btn_section">		
+		<a href="/Object/member/update.jsp" class="btn updatebtn">수정하기</a>
+		<a href="/Object/member/delete.jsp" class="btn deletebtn">탈퇴하기</a>
+	</div><!-- btn_section -->
 
 
 
-</div>
+</div><!-- wrap -->
 
 <script type="text/javascript" src="/Object/js/member/mypage.js"></script>
 

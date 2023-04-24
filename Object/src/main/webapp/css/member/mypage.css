@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.wrap{
+	width: 90%;
+	margin:0 auto;
+}
+h3{
+	text-align: center;
+	margin:30px 0;
+}
+.conatainr{
+	width: 45%;    
+    margin: 0 auto;
+    
+}
+.table{
+	border-collapse: collapse;
+}
+td{
+	border:1px solid;
+}
+.td1{
+	width: 150px;
+    padding: 10px;
+}
+.td2{
+	padding: 20px 15px;
+}
+.btn_section{
+	width: 100%;
+    text-align: center;    
+    margin: 30px auto;
+}
+.btn{
+	display:inline-block;
+	border: 1px solid;
+    padding: 20px 30px;
+}
+.updatebtn{
+	background: #222;
+    color: #fff;	 
+    border: 1px solid #222;
+}
+.deletebtn{
+	border:1px solid #222;
+}

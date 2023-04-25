@@ -19,46 +19,46 @@
 
 <body>
 	<div id="wrap">
-		<div class="sign_up">
+		<div class="update">
 			<h3>회원수정</h3>
 
-			<table class="signup_section">
+			<table class="table">
 				<tr>	
-					<td>회원번호</td>
-					<td class="ob_num"></td>			 
+					<td class="td1">회원번호</td>
+					<td class="td2 ob_num"></td>			 
 				</tr>			
 			
 				<tr>
-					<td class="col1"><span>아이디</span></td> 
-					<td class="ob_id"></td>					
+					<td class="td1"><span>아이디</span></td> 
+					<td class="td2 ob_id"></td>					
 				</tr>			
 				
 				<tr>
-					<td class="col1"><span>이름</span></td>
-					<td class="col2">
-						<input type="text" id="ob_name" name="ob_name" class="ob_name" onkeyup="check1()">
+					<td class="td1"><span>이름</span></td>
+					<td class="td2">
+						<input type="text" id="ob_name" name="ob_name" class="text_input ob_name" onkeyup="check1()">
 					</td>
 					<td class="col3"></td>				
 				</tr>
 				
 				<tr>
-					<td class="col1"><span>전화번호('-' 제외)</span></td>
-					<td class="col2">
-						<input type="text" id="ob_phone_1" name="ob_phone_1" class="ob_phone_1" onkeyup="check2()">
+					<td class="td1"><span>전화번호('-' 제외)</span></td>
+					<td class="td2">
+						<input type="text" id="ob_phone_1" name="ob_phone_1" class="phone_input ob_phone_1" onkeyup="check2()">
 							<span class="hyphen">-</span>
-						<input type="text" id="ob_phone_2" name="ob_phone_2" class="ob_phone_2" onkeyup="check2()">
+						<input type="text" id="ob_phone_2" name="ob_phone_2" class="phone_input ob_phone_2" onkeyup="check2()">
 							<span class="hyphen">-</span>
-						<input type="text" id="ob_phone_3" name="ob_phone_3" class="ob_phone_3" onkeyup="check2()">
+						<input type="text" id="ob_phone_3" name="ob_phone_3" class="phone_input ob_phone_3" onkeyup="check2()">
 					</td>
 					<td class="col3"></td>
 				</tr>
 
 				<tr>
-					<td class="col1"><span>이메일</span></td>
-					<td class="col2">
-						<input type="text" id="ob_email_1" name="ob_email" class="ob_email1" onkeyup="check3()">						
+					<td class="td1"><span>이메일</span></td>
+					<td class="td2">
+						<input type="text" id="ob_email_1" name="ob_email" class="text_input ob_email1" onkeyup="check3()">						
 						<span class="sms">@</span>
-						<input type="text" id="ob_email_2" name="ob_email"  readonly="readonly" class="ob_email2" onkeyup="check3()">
+						<input type="text" id="ob_email_2" name="ob_email"  readonly="readonly" class="text_input ob_email2" onkeyup="check3()">
 						
 						<select id="change_email" name="ob_email" >
 							<opt ion value="none">선택하세요</option>
@@ -74,38 +74,38 @@
 				</tr>
 				
 				<tr>
-					<td class="col1"><span>가입날자</span></td>
-					<td class="ob_signup_date"></td>
+					<td class="td1"><span>가입날자</span></td>
+					<td class="td2 ob_signup_date"></td>
 				</tr>
 
 
 				<tr>
-					<td rowspan="2" class="col1" >주소</td>
-					<td colspan="2" class="col2"> 
-						<span>
+					<td rowspan="2" class="td1" >주소</td>
+					<td colspan="2" class="td2"> 
+						<div class="adddiv">
 							<input type="text" id="sample4_postcode" placeholder="우편번호" class="sample4_postcode">
 							<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
-						</span>						
+						</div>						
 						
-						<span>	
+						<div class="adddiv">	
 							<input type="text" id="sample4_roadAddress" placeholder="도로명주소" class="sample4_roadAddress">
 							<input type="text" id="sample4_jibunAddress" placeholder="지번주소" class="sample4_jibunAddress">
-						</span>	
+							<input type="text" id="sample4_detailAddress" placeholder="상세주소" class="sample4_detailAddress">
+						</div>	
 						
 						<span id="guide" style="color:#999;display:none"></span>						
 						<!-- <input type="text" id="sample4_extraAddress" placeholder="참고항목"> -->
 					</td>
+					<td class="col3"> </td>	
 				</tr>
 				<tr>
-					<td class="col2"> 
-						<input type="text" id="sample4_detailAddress" placeholder="상세주소" class="sample4_detailAddress">
-					</td>	
-					<td class="col3"> </td>				
+					
+								
 				</tr>
 				
 				<tr>
-					<td>포인트</td>
-					<td class="ob_point"> </td>
+					<td class="td1">포인트</td>
+					<td class="td2 ob_point"></td>
 				</tr>
 				
 			</table><!-- signup_section -->
@@ -113,7 +113,7 @@
 		</div><!-- sign_up -->
 
 	<div class="btn_section">
-		<button type="button" onclick="mupinfor()">수정하기</button>		
+		<button type="button" onclick="mupinfor()" class="updatebtn">수정하기</button>		
 	</div>
 
 	</div><!-- wrap -->

@@ -20,7 +20,7 @@ function getmemger(){
 			
 			
 			/*전화번로 자르기 */			
-//			document.querySelector(".ob_phone_1").value = member.ob_phone.split("-")[0]
+			document.querySelector(".ob_phone_1").value = member.ob_phone.split("-")[0]
 			document.querySelector(".ob_phone_2").value = member.ob_phone.split("-")[1]
 			document.querySelector(".ob_phone_3").value = member.ob_phone.split("-")[2]
 			

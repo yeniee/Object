@@ -9,19 +9,26 @@ li{
 }
 a{
 	text-decoration:none;
+	color: #000;
 }
 .wrap{
 	
 }
 
-.sidebar{
-	background: pink;
+.sidebar{	
 	width: 200px;
 	height:100%;
 	position: absolute;
 	top:0;
-	left:-170px;
+	left:0;
 	transition:0.5s;
+	background:#222;
+	
 }
 .side_ul{}
-.side_li{}
+.side_li{
+	padding:10px;
+}
+.side_li a{
+	color:#fff;
+}

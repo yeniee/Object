@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/Object/css/admin/admin.css">
 
 </head>
 <body>
@@ -18,7 +19,7 @@
 %>
 
 
-<h1>관리자 페이지 입니다.</h1>
+
 <div class="wrap">
 	<div class="sidebar">
 		<ul class="side_ul">
